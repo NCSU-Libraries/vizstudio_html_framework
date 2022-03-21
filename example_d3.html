@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualization Studio HTML template</title>
+  <link  rel="stylesheet" type="text/css" href="css/vizstudio.css"/>
+
+  <!-- add a little custom CSS to give wrappers a light background -->
+  <style>
+
+    .wrapper {
+      background:  #eee;
+    }
+
+    .wrapper.background-2 {
+      background:  #F1F9FB;
+    }
+
+    .input-wrapper {
+      margin:  0;
+      font-size:  60px;
+      padding:  10px 50px;
+    }
+
+    .input-wrapper.input {
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="vizstudio">
+
+    <div id="zone-1" class="zone zone-1 span-2"></div>
+
+    <div id="zone-3" class="zone zone-3 span-2"></div>
+
+
+    <div id="zone-5" class="zone zone-5 span-2">
+      <div class="wrapper">
+        <div id="my_density_plot"></div>
+      </div>
+    </div>
+
+
+
+    <div id="zone-7" class="zone zone-7 span-2">
+      <div class="wrapper background-2">
+        <!-- Add a slider -->
+        <div class="input-wrapper">
+          <input type="range" name="mySlider" id=mySlider min="10" max="100" value="50">
+        </div>
+
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+      </div>
+    </div>
+
+
+    <div id="zone-9" class="zone zone-9 span-2">
+      <div class="wrapper">
+
+        <div class="input-wrapper">
+          <label># things</label>
+          <input type="number" min="2" max="100" step="10" value="20" id="nBin">
+        </div>
+        
+        <div id="my_histogram"></div>
+        
+      </div>
+    </div>
+
+    <div id="zone-11" class="zone zone-11 span-2">
+      
+      <div class="wrapper background-2">
+        <div id="my_ridgeline"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- Load js for D3 visualizations -->
+  <script type="text/javascript" src="js/d3_examples/density_plot_slider.js"></script>
+  <script type="text/javascript" src="js/d3_examples/density_plot.js"></script>
+  <script type="text/javascript" src="js/d3_examples/histogram.js"></script>
+  <script type="text/javascript" src="js/d3_examples/ridgeline.js"></script>
+
+  <!-- this Javascript will scale the display down to fit your browser window, very useful for development -->
+  <script type="text/javascript" src="js/transform_scale.js"></script>
+
+</body>
+
+</html>

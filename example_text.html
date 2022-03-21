@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualization Studio HTML template</title>
+  <link  rel="stylesheet" type="text/css" href="css/vizstudio.css"/>
+  <link href="//cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+  
+  <!-- try out some custom CSS! -->
+  <style>
+
+    /* add some padding to each .wrapper - this overrides the framework default */
+    .zone .wrapper { padding:  40px 100px; }
+
+    /* color the wrappers differently! */
+    .wrapper.blue {  background:  #E1F4F8; }
+    .wrapper.green {  background:  #E1F7E9; }
+    .wrapper.pink {  background:  #F7E1EA; }
+    .wrapper.yellow { background:  #F7EFE1; }
+
+    .size { line-height:  1.1em; }
+
+    .size-40 {
+      font-size:  40px;
+      margin:  0 0 0.5em 0;
+    }
+
+    .size-80 { font-size:  80px; }
+    .size-120 { font-size:  120px; }
+    .size-160 { font-size:  160px; }
+    .size-200 { font-size:  200px; }
+    .size-240 { font-size:  240px; }
+
+    .box {
+      width: 80%;
+      height: 880px;
+      margin:  80px auto 0 auto;
+      background:  #f6f6f6;
+      border: 1px solid #aaa;
+      box-shadow: 5px 10px #888888;
+      border-radius: 40px;
+    }
+
+    .box .content {
+      padding: 20px 60px;
+    }
+
+    .col {
+      position:  absolute;
+      top:  0;
+    }
+
+    .col.left {
+      left:  0;
+      padding: 0 50px 0 100px;
+    }
+    
+    .col.right {
+      right:  0;
+      padding: 0 100px 0 50px;
+    }
+
+    .col.long { width:  60%; }
+    .col.short { width:  40%; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="vizstudio">
+
+    <div class="zone zone-1 span-3">
+      <div class="wrapper blue">
+
+        <div class="size size-40">
+          This is 40px text.<br>
+          This is the base font size in set in vizstudio.css.
+        </div>
+
+        <div class="size size-80">
+          This is 80px text.
+        </div>
+
+        <div class="size size-120">
+          This is 120px text.
+        </div>
+
+        <div class="size size-160">
+          This is 160px text.
+        </div>
+
+        <div class="size size-200">
+          This is 200px text.
+        </div>
+
+        <div class="size size-240">
+          This is 240px text.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="zone zone-4 span-3">
+      
+      <!-- Apply custom styles to .wrapper instead of .zone -->
+      <div class="wrapper green">
+
+        <div class="col left short">
+          <h1>This is default h1 text</h1>
+          <h2>This is default h2 text.</h2>
+          <h3>This is default h3 text.</h3>
+          <h3>This is default h4 text.</h4>
+          <h3>This is default h5 text.</h5>
+          <h3>This is default h6 text.</h6>
+          <p>This is default paragraph text.</p>
+          <ul>
+            <li>This is</li>
+            <li>a default</li>
+            <li>unordered list</li>
+          </ul>
+        </div>
+
+        <div class="col right long">
+
+          <div class="box size-80">
+            <div class="content">
+              <p>All of the default text is relative to the 40px base font size.</p>
+              <p>Also, did you notice that this quadrant has a 2-column layout inside of it? That's custom CSS.</p>
+              <p>Oh and did you notice this box?</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="zone zone-7 span-3">
+      
+      <div class="wrapper yellow">
+
+        <div class="col left long">
+
+          <div class="box size-80">
+            <div class="content">
+              <p>Here are some examples of using HTML text. This is using a 4-zone layout, that divides the room into quarters. But inside each of these zones, all the layout is done with custom CSS.</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+
+    </div>
+
+    <div class="zone zone-10 span-3">
+      
+      <div class="wrapper pink">
+
+
+        
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- this Javascript will scale the display down to fit your browser window, very useful for development -->
+  <script type="text/javascript" src="js/transform_scale.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualization Studio HTML template</title>
+  <link  rel="stylesheet" type="text/css" href="css/vizstudio.css"/>
+</head>
+
+<body>
+
+  <!-- All visible content is contained within .vizstudio -->
+  <main class="vizstudio">
+
+    <!-- zones can be contained within .zone-wrapper to facilitate animation and other scriptable behavior. -->
+    <!-- This element is optional. -->
+    <div class="zone-wrapper">
+
+
+      <!-- Each zone must include .zone class as well as its position class (.zone-1, .zone-2, etc.) -->
+      <!--    and may also include a span class (.span-1, .span-2, etc.) -->
+      <div class="zone zone-1">
+        
+        <!-- Using this .wrapper element will scale content to fit the height of the display -->
+        <div class="wrapper">
+          <!-- CONTENT GOES HERE -->
+        </div>
+
+      </div>
+
+
+      <!-- Follow the example above to add content to other zones -->
+      <div class="zone zone-2"></div>
+
+      <div class="zone zone-3"></div>
+
+      <div class="zone zone-4"></div>
+
+      <div class="zone zone-5"></div>
+
+      <div class="zone zone-6"></div>
+
+      <div class="zone zone-7"></div>
+
+      <div class="zone zone-8"></div>
+
+      <div class="zone zone-9"></div>
+
+      <div class="zone zone-10"></div>
+
+      <div class="zone zone-11"></div>
+
+      <div class="zone zone-12"></div>
+
+    </div>
+
+  </main>
+
+
+  <!-- Add background audio to <audio> elements in here - this div is hidden by CSS -->
+  <!-- Audio start must be triggered by Javascript, autostart is no longer supported in major browsers -->
+  <div id="audio" class="hidden"></div>
+
+  <!-- use this Javascript to test changes to this template (adds content to make zones visible) -->
+  <!-- Remove this line before adding content to the template -->
+  <script type="text/javascript" src="js/template_demo.js"></script>
+
+  <!-- this Javascript will scale the display down to fit your browser window, very useful for development -->
+  <script type="text/javascript" src="js/transform_scale.js"></script>
+
+</body>
+
+</html>
