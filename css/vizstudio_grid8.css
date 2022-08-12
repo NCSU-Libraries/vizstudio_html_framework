@@ -1,8 +1,10 @@
+/* DEPRICATED! THESE STYLES HAVE BEEN MOVED TO vizstudio.css */
+
 .grid-8 .zone {
   width: 1920px;
 }
 
-/* position classes */
+/* grid-8 position classes */
 
 .grid-8 .zone.zone-1 {
   left: 0;
