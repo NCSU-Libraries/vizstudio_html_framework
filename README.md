@@ -1,3 +1,5 @@
+> This repo has been archived. For the most recent version of this framework, see: https://github.com/NCSU-Libraries/visualization_gallery_html_framework
+
 # Visualization Studio HTML Framework
 
 A lightwweight HTML/CSS framework for displaying diverse content in 360º wraparound mode in the Visualization Studio at the D.H. Hill Jr. Library.
